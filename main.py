@@ -148,7 +148,7 @@ def streaming_prediction(project_id, location, prompt):
       "top_k": 40,  # Top k most likely words to consider at each step
   }
   model = GenerativeModel(model_name="visavoyage")  # Replace with your model name
-  response = model.predict(prompt, **parameters)
+  response = model.generate_content(prompt)
   return response.text
 
 def main():
