@@ -148,7 +148,7 @@ def streaming_prediction(project_id, location, prompt):
       "temperature": 1,  # Controls randomness (higher = more creative)
       "top_k": 40,  # Top k most likely words to consider at each step
   }
-  model = TextGenerationModel.from_pretrained("visavoyage")  # Replace with your model name
+  model = TextGenerationModel.from_pretrained("1420804318574936064")  # Replace with your model name
   response = model.predict(prompt, **parameters)
   return response.text
 
