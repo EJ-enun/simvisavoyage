@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 from google.cloud import aiplatform 
 import vertexai
-from vertexai.generative_models import GenerativeModel
+from vertexai.text_generation import TextGenerationModel
 import pyperclip
 # Replace with your project ID and location
 PROJECT_ID = "visavoyage"
