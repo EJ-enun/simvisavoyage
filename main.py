@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 from google.cloud import aiplatform 
 import vertexai
-from vertexai import generative_models
+from vertexai import generative_model
 from generative_models import text_generation
 import pyperclip
 # Replace with your project ID and location
