@@ -1,6 +1,5 @@
 transformers
 streamlit
 google-cloud-aiplatform
-aiplatform
 requests
 pyperclip
