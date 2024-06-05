@@ -3,6 +3,7 @@ from transformers import pipeline
 from google.cloud import aiplatform 
 import vertexai
 from vertexai import generative_models
+from generative_models import text_generationn
 import pyperclip
 # Replace with your project ID and location
 PROJECT_ID = "visavoyage"
