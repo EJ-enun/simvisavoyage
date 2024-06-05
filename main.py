@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 from google.cloud import aiplatform 
 import vertexai
-from vertexai.text_generation import TextGenerationModel
+from vertexai.generative_models import GenerativeModel
 import pyperclip
 # Replace with your project ID and location
 PROJECT_ID = "visavoyage"
@@ -147,7 +147,7 @@ def streaming_prediction(project_id, location, prompt):
       "temperature": 1,  # Controls randomness (higher = more creative)
       "top_k": 40,  # Top k most likely words to consider at each step
   }
-  model = TextGenerationModel.from_pretrained("visavoyage")  # Replace with your model name
+  model = GenerativeModel.from_pretrained("visavoyage")  # Replace with your model name
   response = model.predict(prompt, **parameters)
   return response.text
 
